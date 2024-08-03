@@ -10,14 +10,25 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
-            background-color:#001326; /* Itt állíthatod be az új háttérszínt */
+            margin: 0;
+            background-color: #f0f0f0;
         }
         .ad-container {
             margin: 20px 0;
         }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -100px; /* Az a távolság, amennyire kilóg */
+            width: 100px; /* A sáv szélessége */
+            height: 100vh; /* Magasság: teljes magasság */
+            background-color: #000e1c; /* A sáv színe */
+            z-index: 1000; /* Hogy a sáv a többi tartalom fölött legyen */
+        }
     </style>
 </head>
 <body>
+    <div class="sidebar"></div>
     <h1>xd</h1>
     <div class="ad-container">
         <!-- Google AdSense hirdetés -->
@@ -33,3 +44,4 @@
     </div>
 </body>
 </html>
+
