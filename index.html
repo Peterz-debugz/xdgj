@@ -26,6 +26,18 @@
             z-index: 1000; /* Hogy a sáv a többi tartalom fölött legyen */
             box-shadow: 3px 0 20px rgba(0, 0, 0, 0.5); /* Árnyék a sáv jobb oldalán */
         }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 50%; /* A sáv középen helyezkedik el */
+            transform: translateX(-50%); /* A sáv teljes szélességét figyelembe véve középre igazít */
+            width: 100px; /* A sáv szélessége */
+            height: 100vh; /* Magasság: teljes magasság */
+            background-color: #001c30; /* A sáv színe */
+            z-index: 1000; /* Hogy a sáv a többi tartalom fölött legyen */
+            box-shadow: 4px 0 8px rgba(0, 0, 0, 0.5); /* Árnyék a sáv jobb oldalán */
+        }
+
     </style>
 </head>
 <body>
