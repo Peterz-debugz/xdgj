@@ -14,7 +14,7 @@
             background-color: #001326; /* Háttér színe */
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Alapértelmezetten a csík alá helyezkedik el */
+            align-items: flex-start; /* A csík alá helyezkedik el */
             min-height: 100vh; /* Teljes nézetablak magasságának biztosítása */
         }
         .top-bar {
@@ -47,6 +47,20 @@
             height: calc(100vh - 90px); /* Magasság: teljes nézetablak magassága mínusz a csík magassága */
             background-color: #042138; /* Téglalap színe */
             z-index: 999; /* Hogy a téglalap a többi tartalom mögött legyen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: #ffffff; /* Szöveg színe */
+            font-size: 18px; /* Szöveg mérete */
+        }
+        .content {
+            margin-top: 20px; /* A szöveg távolsága a téglalap tetejétől */
+        }
+        .content p {
+            margin: 0;
+            line-height: 1.5; /* A sorok közötti távolság */
         }
     </style>
 </head>
@@ -59,6 +73,13 @@
             <img src="kick.png" alt="Kick Logo"> <!-- Kick kép -->
         </a>
     </div>
-    <div class="sidebar"></div> <!-- Függőleges téglalap -->
+    <div class="sidebar">
+        <div class="content">
+            <p>By viewing this page, you can support me,</p>
+            <p>as it contains ads that generate revenue for me.</p>
+            <p>100% of the money earned from this will be reinvested into the live streams.</p>
+            <p>Thank you in advance for your support.</p>
+        </div>
+    </div>
 </body>
 </html>
