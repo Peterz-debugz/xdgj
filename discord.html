@@ -27,7 +27,8 @@
             z-index: 1000; /* Hogy a csík a többi tartalom fölött legyen */
             display: flex;
             align-items: center; /* Kép középre igazítása függőlegesen */
-            justify-content: center; /* Kép középre igazítása vízszintesen */
+            justify-content: space-between; /* A bal és jobb oldali tartalom közötti távolság */
+            padding: 0 20px; /* Párnázás a bal és jobb oldalon */
         }
         .top-bar img {
             height: 60px; /* Kép magassága, tetszés szerint módosítható */
@@ -80,8 +81,8 @@
 </head>
 <body>
     <div class="top-bar">
-        <a href="discord.html"> <!-- Link a discord.html fájlra -->
-            <img src="dc.png" alt="DC Logo"> <!-- Kép -->
+        <a href="index.html"> <!-- Link az index.html fájlra -->
+            <img src="balnyil.png" alt="Bal nyíl"> <!-- Bal nyíl kép -->
         </a>
     </div>
     <div class="sidebar">
@@ -95,3 +96,4 @@
     </div>
 </body>
 </html>
+
