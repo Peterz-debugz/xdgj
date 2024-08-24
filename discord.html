@@ -62,6 +62,20 @@
             margin: 10px 0 0;
             font-size: 18px; /* Szöveg mérete, tetszés szerint módosítható */
         }
+        .discord-link {
+            margin-top: 20px; /* Felső margó a DISCORD SERVER szöveg alatt */
+            text-decoration: none; /* Link aláhúzás eltávolítása */
+            color: #00b0f4; /* Link színe, tetszés szerint módosítható */
+            font-size: 18px; /* Szöveg mérete */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .discord-link img {
+            width: 50px; /* Kép szélessége, tetszés szerint módosítható */
+            height: auto; /* Automatikus magasság a szélességhez arányosan */
+            margin-bottom: 10px; /* Kép alatti margó */
+        }
     </style>
 </head>
 <body>
@@ -74,6 +88,10 @@
         <img src="dc.png" alt="DC Logo"> <!-- Kép a téglalapon -->
         <h1>myteayy</h1> <!-- Fő szöveg -->
         <p>YOU CAN ADD ME</p> <!-- Alsó szöveg -->
+        <a href="https://discord.gg/uqCP3ktU" class="discord-link"> <!-- Link a Discord szerverhez -->
+            <img src="dc.png" alt="DC Logo"> <!-- Kép a link alatt -->
+            DISCORD SERVER
+        </a>
     </div>
 </body>
 </html>
