@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dagadtmalac Discrod</title>
+    <title>Dagadtmalac Discord</title>
     <link rel="icon" href="kakad.png" type="image/png"> <!-- Ikon beállítása -->
     <style>
         body {
@@ -29,6 +29,10 @@
             align-items: center; /* Kép középre igazítása függőlegesen */
             justify-content: center; /* Kép középre igazítása vízszintesen */
         }
+        .top-bar img {
+            height: 60px; /* Kép magassága, tetszés szerint módosítható */
+            width: auto; /* Automatikus szélesség a magassághoz arányosan */
+        }
         .sidebar {
             position: fixed;
             top: 90px; /* A csík alatt kezdődik */
@@ -38,10 +42,25 @@
             height: calc(100vh - 90px); /* Magasság: teljes nézetablak magassága mínusz a csík magassága */
             background-color: #042138; /* Téglalap színe */
             z-index: 999; /* Hogy a téglalap a többi tartalom mögött legyen */
+            color: #fff; /* Szöveg színe */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Kép és szöveg középre igazítása */
+            justify-content: center; /* Kép és szöveg középre igazítása függőlegesen */
+            padding: 20px; /* Belülről párnázás */
         }
-        .top-bar img {
-            height: 60px; /* Kép magassága, tetszés szerint módosítható */
-            width: auto; /* Automatikus szélesség a magassághoz arányosan */
+        .sidebar img {
+            width: 100px; /* Kép szélessége, tetszés szerint módosítható */
+            height: auto; /* Automatikus magasság a szélességhez arányosan */
+            margin-bottom: 10px; /* Kép alatti margó */
+        }
+        .sidebar h1 {
+            margin: 0;
+            font-size: 24px; /* Szöveg mérete, tetszés szerint módosítható */
+        }
+        .sidebar p {
+            margin: 10px 0 0;
+            font-size: 18px; /* Szöveg mérete, tetszés szerint módosítható */
         }
     </style>
 </head>
@@ -51,6 +70,10 @@
             <img src="dc.png" alt="DC Logo"> <!-- Kép -->
         </a>
     </div>
-    <div class="sidebar"></div> <!-- Függőleges téglalap -->
+    <div class="sidebar">
+        <img src="dc.png" alt="DC Logo"> <!-- Kép a téglalapon -->
+        <h1>myteayy</h1> <!-- Fő szöveg -->
+        <p>Ez az aláírás szöveg</p> <!-- Alsó szöveg -->
+    </div>
 </body>
 </html>
