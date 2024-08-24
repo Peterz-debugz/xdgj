@@ -27,12 +27,12 @@
             z-index: 1000; /* Hogy a csík a többi tartalom fölött legyen */
             display: flex;
             align-items: center; /* Kép középre igazítása függőlegesen */
-            justify-content: space-between; /* A bal és jobb oldali tartalom közötti távolság */
+            justify-content: center; /* Képek középre igazítása vízszintesen */
             padding: 0 20px; /* Párnázás a bal és jobb oldalon */
         }
-        .top-bar img {
-            height: 60px; /* Kép magassága, tetszés szerint módosítható */
-            width: auto; /* Automatikus szélesség a magassághoz arányosan */
+        .top-bar .left-img {
+            position: absolute;
+            left: 20px; /* Bal oldalra igazítás */
         }
         .top-bar .center-img {
             height: 60px; /* Kép magassága, tetszés szerint módosítható */
@@ -86,7 +86,7 @@
 </head>
 <body>
     <div class="top-bar">
-        <a href="index.html"> <!-- Link az index.html fájlra -->
+        <a href="index.html" class="left-img"> <!-- Link az index.html fájlra -->
             <img src="balnyil.png" alt="Bal nyíl"> <!-- Bal nyíl kép -->
         </a>
         <a href="https://kick.com/dagadekmalac"> <!-- Link a Kick oldalra -->
