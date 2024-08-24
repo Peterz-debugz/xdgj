@@ -25,6 +25,9 @@
             height: 90px; /* A csík magassága */
             background-color: #001929; /* A csík színe */
             z-index: 1000; /* Hogy a csík a többi tartalom fölött legyen */
+            display: flex;
+            align-items: center; /* Kép középre igazítása függőlegesen */
+            justify-content: center; /* Kép középre igazítása vízszintesen */
         }
         .sidebar {
             position: fixed;
@@ -36,10 +39,18 @@
             background-color: #042138; /* Téglalap színe */
             z-index: 999; /* Hogy a téglalap a többi tartalom mögött legyen */
         }
+        .top-bar img {
+            height: 60px; /* Kép magassága, tetszés szerint módosítható */
+            width: auto; /* Automatikus szélesség a magassághoz arányosan */
+        }
     </style>
 </head>
 <body>
-    <div class="top-bar"></div>
+    <div class="top-bar">
+        <a href="https://example.com"> <!-- Link az oldalra -->
+            <img src="dc.png" alt="DC Logo"> <!-- Kép -->
+        </a>
+    </div>
     <div class="sidebar"></div> <!-- Függőleges téglalap -->
 </body>
 </html>
