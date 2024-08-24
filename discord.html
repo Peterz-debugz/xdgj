@@ -42,7 +42,6 @@
             height: calc(100vh - 90px); /* Magasság: teljes nézetablak magassága mínusz a csík magassága */
             background-color: #042138; /* Téglalap színe */
             z-index: 999; /* Hogy a téglalap a többi tartalom mögött legyen */
-            color: #fff; /* Szöveg színe */
             display: flex;
             flex-direction: column;
             align-items: center; /* Kép és szöveg középre igazítása */
@@ -53,14 +52,17 @@
             width: 100px; /* Kép szélessége, tetszés szerint módosítható */
             height: auto; /* Automatikus magasság a szélességhez arányosan */
             margin-bottom: 10px; /* Kép alatti margó */
+            margin-top: -50px; /* Kép feljebb mozgatása, 5 cm ≈ 50 px */
         }
         .sidebar h1 {
             margin: 0;
             font-size: 24px; /* Szöveg mérete, tetszés szerint módosítható */
+            margin-top: -50px; /* Fő szöveg feljebb mozgatása, 5 cm ≈ 50 px */
         }
         .sidebar p {
             margin: 10px 0 0;
             font-size: 18px; /* Szöveg mérete, tetszés szerint módosítható */
+            margin-top: -50px; /* Alsó szöveg feljebb mozgatása, 5 cm ≈ 50 px */
         }
     </style>
 </head>
