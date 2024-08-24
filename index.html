@@ -27,7 +27,16 @@
             z-index: 1000; /* Hogy a csík a többi tartalom fölött legyen */
             display: flex;
             align-items: center; /* Kép középre igazítása függőlegesen */
-            justify-content: center; /* Kép középre igazítása vízszintesen */
+            justify-content: center; /* Képek középre igazítása vízszintesen */
+            padding: 0 20px; /* Párnázás a bal és jobb oldalon */
+        }
+        .top-bar a {
+            margin: 0 40px; /* A képek közötti távolság */
+        }
+        .top-bar img {
+            height: 60px; /* Kép magassága */
+            width: auto; /* Automatikus szélesség a magassághoz arányosan */
+            border-radius: 15px; /* Lekerekített sarkak, ha szükséges */
         }
         .sidebar {
             position: fixed;
@@ -39,16 +48,15 @@
             background-color: #042138; /* Téglalap színe */
             z-index: 999; /* Hogy a téglalap a többi tartalom mögött legyen */
         }
-        .top-bar img {
-            height: 60px; /* Kép magassága, tetszés szerint módosítható */
-            width: auto; /* Automatikus szélesség a magassághoz arányosan */
-        }
     </style>
 </head>
 <body>
     <div class="top-bar">
         <a href="discord.html"> <!-- Link a discord.html fájlra -->
             <img src="dc.png" alt="DC Logo"> <!-- Kép -->
+        </a>
+        <a href="https://kick.com/dagadekmalac"> <!-- Link a Kick oldalra -->
+            <img src="kick.png" alt="Kick Logo"> <!-- Kick kép -->
         </a>
     </div>
     <div class="sidebar"></div> <!-- Függőleges téglalap -->
