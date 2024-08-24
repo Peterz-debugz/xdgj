@@ -27,19 +27,15 @@
             z-index: 1000; /* Hogy a csík a többi tartalom fölött legyen */
             display: flex;
             align-items: center; /* Kép középre igazítása függőlegesen */
-            justify-content: center; /* Képek középre igazítása vízszintesen */
+            justify-content: space-between; /* Képek elhelyezése a sáv két oldalán */
             padding: 0 20px; /* Párnázás a bal és jobb oldalon */
-        }
-        .top-bar .left-img {
-            position: absolute;
-            left: 20px; /* Bal oldalra igazítás */
         }
         .top-bar .left-img img {
             height: 40px; /* Kép magassága */
             width: auto; /* Automatikus szélesség a magassághoz arányosan */
         }
-        .top-bar .center-img {
-            height: 60px; /* Kép magassága, tetszés szerint módosítható */
+        .top-bar .right-img img {
+            height: 60px; /* Kép magassága */
             width: auto; /* Automatikus szélesség a magassághoz arányosan */
             border-radius: 15px; /* Lekerekített sarkak */
         }
@@ -93,8 +89,8 @@
         <a href="index.html" class="left-img"> <!-- Link az index.html fájlra -->
             <img src="balnyil.png" alt="Bal nyíl"> <!-- Bal nyíl kép -->
         </a>
-        <a href="https://kick.com/dagadekmalac"> <!-- Link a Kick oldalra -->
-            <img src="kick.png" alt="Kick Logo" class="center-img"> <!-- Kick kép -->
+        <a href="https://kick.com/dagadekmalac" class="right-img"> <!-- Link a Kick oldalra -->
+            <img src="kick.png" alt="Kick Logo"> <!-- Kick kép -->
         </a>
     </div>
     <div class="sidebar">
