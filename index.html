@@ -9,7 +9,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 0; /* Padding eltávolítva, hogy a téglalap teljesen a szélekhez érjen */
             margin: 0;
             background-color: #001326; /* Háttér színe */
         }
@@ -22,9 +22,19 @@
             background-color: #1a0147; /* A csík színe */
             z-index: 1000; /* Hogy a csík a többi tartalom fölött legyen */
         }
+        .sidebar {
+            position: fixed;
+            top: 90px; /* A csík alatt kezdődik */
+            left: 0;
+            width: 120px; /* A téglalap szélessége */
+            height: calc(100vh - 90px); /* Magasság: teljes nézetablak magassága mínusz a csík magassága */
+            background-color: #00325b; /* Téglalap színe */
+            z-index: 999; /* Hogy a téglalap a többi tartalom mögött legyen */
+        }
     </style>
 </head>
 <body>
     <div class="top-bar"></div>
+    <div class="sidebar"></div> <!-- Függőleges téglalap -->
 </body>
 </html>
