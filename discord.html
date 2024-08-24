@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGEarn</title>
+    <link rel="icon" href="kakad.png" type="image/png"> <!-- Ikon beállítása -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            background-color: #001326; /* Háttér színe */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alapértelmezetten a csík alá helyezkedik el */
+            min-height: 100vh; /* Teljes nézetablak magasságának biztosítása */
+        }
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90px; /* A csík magassága */
+            background-color: #001929; /* A csík színe */
+            z-index: 1000; /* Hogy a csík a többi tartalom fölött legyen */
+            display: flex;
+            align-items: center; /* Kép középre igazítása függőlegesen */
+            justify-content: center; /* Kép középre igazítása vízszintesen */
+        }
+        .sidebar {
+            position: fixed;
+            top: 90px; /* A csík alatt kezdődik */
+            left: 50%;
+            transform: translateX(-50%); /* Középre igazítás */
+            width: 700px; /* A téglalap szélessége */
+            height: calc(100vh - 90px); /* Magasság: teljes nézetablak magassága mínusz a csík magassága */
+            background-color: #042138; /* Téglalap színe */
+            z-index: 999; /* Hogy a téglalap a többi tartalom mögött legyen */
+        }
+        .top-bar img {
+            height: 60px; /* Kép magassága, tetszés szerint módosítható */
+            width: auto; /* Automatikus szélesség a magassághoz arányosan */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="discord.html"> <!-- Link a discord.html fájlra -->
+            <img src="dc.png" alt="DC Logo"> <!-- Kép -->
+        </a>
+    </div>
+    <div class="sidebar"></div> <!-- Függőleges téglalap -->
+</body>
+</html>
